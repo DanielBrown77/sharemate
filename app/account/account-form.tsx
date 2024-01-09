@@ -75,7 +75,7 @@ export default function AccountForm({ session }: { session: Session | null }) {
   }
 
   return (
-    <div className="form-widget">
+    <div className="form-widget" style={{ padding: "50px 0 100px 0" }}>
       <div>
         <label htmlFor="email">Email</label>
         <input id="email" type="text" value={session?.user.email} disabled />

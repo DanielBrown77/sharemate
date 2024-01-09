@@ -1,5 +1,5 @@
-import "primereact/resources/themes/lara-light-blue/theme.css";
 import "./globals.css";
+import "primereact/resources/themes/tailwind-light/theme.css";
 
 export const metadata = {
   title: "Sharemate",
@@ -10,9 +10,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang="en">
       <body suppressHydrationWarning={true}>
-        <div className="container mx-auto" style={{ padding: "50px 0 100px 0" }}>
-          {children}
-        </div>
+        <div className="container mx-auto">{children}</div>
       </body>
     </html>
   );
