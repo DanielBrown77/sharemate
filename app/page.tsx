@@ -2,15 +2,16 @@ import AuthForm from "./auth-form";
 
 export default function Home() {
   return (
-    <div className="row">
-      <div className="col-6">
-        <h1 className="header">Sharemate</h1>
-        <p className="">
-          Experience our Auth and Storage through a simple profile management example. Create a user
-          profile and upload an avatar image. Fast, simple, secure.
+    <div className="flex space-x-4">
+      <div className="basis-1/2">
+        <h1 className="text-5xl font-extrabold dark:text-white py-2">Sharemate</h1>
+        <p>
+          쉐어하우스 멤버, 룸메이트와 함께 사용하는 공유 생활 관리 서비스. Sharemate로 편리하게 공동
+          가계부, 일정 공유, 블로그 등 공유하세요.
         </p>
+        {/* <p></p> */}
       </div>
-      <div className="col-6 auth-widget">
+      <div className="basis-1/2 auth-widget">
         <AuthForm />
       </div>
     </div>
