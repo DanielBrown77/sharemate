@@ -12,7 +12,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang="en">
       <body suppressHydrationWarning={true}>
-        <div className="container mx-auto">{children}</div>
+        <div id="root">{children}</div>
       </body>
     </html>
   );
