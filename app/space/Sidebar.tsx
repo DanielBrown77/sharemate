@@ -20,6 +20,18 @@ export default function SideBar() {
     },
     { label: "Messages", icon: "pi pi-inbox" },
     { label: "Settings", icon: "pi pi-cog" },
+    {
+      separator: true,
+    },
+    {
+      label: "Dashboard",
+      icon: "pi pi-home",
+      // url: 'https://react.dev/'
+    },
+    {
+      label: "Account Bank",
+      icon: "pi pi-wallet",
+    },
   ];
   return <Menu id="sidebar" className="flex-none w-52" model={items} />;
 }
