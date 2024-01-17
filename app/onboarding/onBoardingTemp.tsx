@@ -25,12 +25,10 @@ const contents: Contents = {
 
 export default function OnBoardingTemp({ session }: { session: Session | null }) {
   let stage: string = "name";
-  const [values, setValues] = useState<Values | null>({});
-  console.log("values :", values);
-
+  /* const [values, setValues] = useState<Values | null>({});
   if (values?.name) {
     stage = "invite";
-  }
+  } */
 
   const { title, desc } = contents[stage];
 
@@ -40,7 +38,8 @@ export default function OnBoardingTemp({ session }: { session: Session | null })
         <h4 className="text-2xl font-bold dark:text-white">{title}</h4>
         <p className="mb-3 text-gray-500 dark:text-gray-400">{desc}</p>
       </div>
-      {stage === "name" ? <SpaceNameForm setValues={setValues} /> : <InviteForm />}
+      {/* {stage === "name" ? <SpaceNameForm setValues={setValues} /> : <InviteForm />} */}
+      <SpaceNameForm />
     </div>
   );
 }

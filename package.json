@@ -18,7 +18,8 @@
     "primeicons": "^6.0.1",
     "primereact": "^10.3.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20",
